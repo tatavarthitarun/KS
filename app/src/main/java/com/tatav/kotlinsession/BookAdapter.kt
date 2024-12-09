@@ -14,6 +14,7 @@ class BookAdapter(private var bookList: List<String>) :
         val bookTitle: TextView = itemView.findViewById(R.id.bookTitle)
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_book, parent, false)
